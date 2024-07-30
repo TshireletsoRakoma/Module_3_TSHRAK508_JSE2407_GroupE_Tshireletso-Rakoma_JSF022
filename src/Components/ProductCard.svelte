@@ -18,6 +18,7 @@
     .product-card {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       align-items: center;
       border: 1px solid #ccc;
       border-radius: 8px;
@@ -26,6 +27,7 @@
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s;
       cursor: pointer;
+      height: 100%;
     }
   
     .product-card:hover {
@@ -41,6 +43,7 @@
   
     .product-info {
       text-align: center;
+      width: 100%;
     }
   
     .product-title {
@@ -55,7 +58,24 @@
     }
   
     .view-details-button {
-      margin-top: auto;
+      margin-top: 0.5rem;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+  
+    .view-details-button:hover {
+      background-color: #0056b3;
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
   </style>
   

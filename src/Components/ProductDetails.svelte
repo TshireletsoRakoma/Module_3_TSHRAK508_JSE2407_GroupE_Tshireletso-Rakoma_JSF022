@@ -49,7 +49,7 @@
   
   <style>
     .product-detail {
-      max-width: 600px;
+      max-width: 300px;
       margin: 0 auto;
       text-align: center;
     }

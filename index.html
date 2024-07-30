@@ -9,5 +9,19 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+    <div class="grid-container">
+      <template x-for="product in products" :key="product.id">
+        <div class="product-card">
+          <img :src="product.image" alt="Product Image" class="product-image">
+          <div class="product-info">
+            <h2 class="product-title" x-text="product.title"></h2>
+            <p class="product-price">$<span x-text="product.price"></span></p>
+            <p class="text-gray-500 text-sm mb-2" x-text="product.category"></p>
+            <button @click="openModal(product.id)" class="view-details-button">View Details</button>
+          </div>
+        </div>
+      </template>
+    </div>
+    
   </body>
 </html>
